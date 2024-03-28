@@ -1,0 +1,54 @@
+.realty-fields {
+  display: grid;
+}
+.realty-content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+  .realty-fields {
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(auto-fill, 40px);
+    grid-row-gap: 20px;
+  }
+}
+
+.realty-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.realty-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  padding-bottom: 20px;
+  .realty-item {
+    border-radius: 10px 0 10px 10px;
+    background: rgb(239,239,245);
+    background: linear-gradient(0deg, rgba(239,239,245,1) 0%, rgba(234,234,240,1) 35%, rgba(80,90,92,1) 100%);
+    padding-bottom: 20px;
+    a {
+      color: #000;
+      text-decoration: none;
+      img {
+        height: 100%;
+        max-height: 200px;
+      }
+      h3 {
+        padding: 0 10px;
+      }
+      .realty-fields {
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: repeat(auto-fill, 40px);
+        grid-row-gap: 5px;
+        padding: 0 10px;
+      }
+
+    }
+    a:hover {
+      color: #0c88b4;
+    }
+  }
+}
